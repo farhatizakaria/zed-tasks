@@ -1,0 +1,24 @@
+[
+  // C++ Task
+  {
+    "label": "C++ : Build and Run",
+    //"command": "g++ \"$ZED_FILE\" -o \"$ZED_STEM\" && ./$ZED_STEM",
+    "command": "cd \"$ZED_DIRNAME\" && g++ \"$ZED_FILENAME\" -o \"$ZED_STEM\" && ./$ZED_STEM",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+  // Python Task
+  {
+    "label": "Python: Run Current File",
+    "command": "python3 \"$ZED_FILE\"",
+    "use_new_terminal": false,
+    "reveal": "always"
+  },
+  // Typst Task
+  {
+    "label": "Typst: Build PDF",
+    "command": "cd \"$ZED_DIRNAME\" && typst compile \"$ZED_FILENAME\"",
+    "use_new_terminal": false,
+    "reveal": "always"
+  }
+]
